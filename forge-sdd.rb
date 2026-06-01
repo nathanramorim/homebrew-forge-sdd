@@ -11,7 +11,7 @@ class ForgeSdd < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nathanramorim/forge-sdd/releases/download/v1.1.0/forge-sdd_darwin_amd64.tar.gz"
-      sha256 "970b7ef40f53f7684e1f13b2f87cc202530f8c59d01cbadd22334c446bd861d1"
+      sha256 "d4059a7a18dc182b8a18fa7d7ff92031739078426cc1b5e04ea0dbd23bb897f9"
 
       define_method(:install) do
         bin.install "forge-sdd"
@@ -19,7 +19,7 @@ class ForgeSdd < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nathanramorim/forge-sdd/releases/download/v1.1.0/forge-sdd_darwin_arm64.tar.gz"
-      sha256 "d11a1a4e7ac76c1e1677b549444cdc54e8cf8282c721814297ebaf8a6f4da495"
+      sha256 "04c2a7acb2b8ed063d16ff0ffef248f613bea97a318e4752e732508bdcb6469a"
 
       define_method(:install) do
         bin.install "forge-sdd"
@@ -30,14 +30,14 @@ class ForgeSdd < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nathanramorim/forge-sdd/releases/download/v1.1.0/forge-sdd_linux_amd64.tar.gz"
-      sha256 "502de93616ccaeeb17bcc68f38f0b6a37bc283ea30534d9fee1f1c0a9ae47026"
+      sha256 "bcd1d2cb4138ba318ae7ecaf4d1fb5777a25f06d7896644bfeed626b38c8ed8e"
       define_method(:install) do
         bin.install "forge-sdd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nathanramorim/forge-sdd/releases/download/v1.1.0/forge-sdd_linux_arm64.tar.gz"
-      sha256 "ccc6c4d7c65f3c5af8272d1f16b04e0c56567aef29dd0bcd49e0641f9221cea8"
+      sha256 "472aa015c6315e6c01ec821ff989b7f8389456dcae766d4eb20b8e531a2c975e"
       define_method(:install) do
         bin.install "forge-sdd"
       end
