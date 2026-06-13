@@ -11,7 +11,7 @@ class ForgeSdd < Formula
   on_macos do
     if Hardware::CPU.intel?
       url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.3.0/homebrew-forge-sdd_darwin_amd64.tar.gz"
-      sha256 "68d26933cb283cf2c7f846565613a922bb0020fe536a69e3a61c919046343443"
+      sha256 "498a81fb798ed81dfa13d74b492013e2cebf9fa4b56e4de0dbf35f765ba92479"
 
       define_method(:install) do
         bin.install "forge-sdd"
@@ -19,7 +19,7 @@ class ForgeSdd < Formula
     end
     if Hardware::CPU.arm?
       url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.3.0/homebrew-forge-sdd_darwin_arm64.tar.gz"
-      sha256 "a40b7ca4ab8b9c6437a7125271394397c70da272042ae9eb3969bb1a0ee00bbf"
+      sha256 "8be150b5d70397a3046d559566bdfac5dedc9fbd94e510e2dae3cde5a57f8c08"
 
       define_method(:install) do
         bin.install "forge-sdd"
@@ -30,14 +30,14 @@ class ForgeSdd < Formula
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
       url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.3.0/homebrew-forge-sdd_linux_amd64.tar.gz"
-      sha256 "cc270710bf2dd7c3f01d8ff9ff66ad3d4e2ad690495f7ce6fddd5d1d88b9975a"
+      sha256 "f91e95e44eaab9442dfaf71047804cb5b34ff2c1e8f4ffc723965ae908acdb37"
       define_method(:install) do
         bin.install "forge-sdd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
       url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.3.0/homebrew-forge-sdd_linux_arm64.tar.gz"
-      sha256 "70050101ff635e228606b2e05224c5368e5d477cebe19b75d211e9b9004e0eaf"
+      sha256 "42da0e36882e9ed59352af8ef113e03bd79dbb38628bdc14603edde098e39f4f"
       define_method(:install) do
         bin.install "forge-sdd"
       end
