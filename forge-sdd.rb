@@ -5,21 +5,21 @@
 class ForgeSdd < Formula
   desc "CLI que scaffolda estruturas Forge-SDD em segundos"
   homepage "https://github.com/nathanramorim/homebrew-forge-sdd"
-  version "1.1.2"
+  version "1.2.2"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.1.2/homebrew-forge-sdd_darwin_amd64.tar.gz"
-      sha256 "0d597dd4fb7931cf06d09bc5fd2223738cb64adc511b2b677468d8cccf886fff"
+      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.2.2/homebrew-forge-sdd_darwin_amd64.tar.gz"
+      sha256 "7cb1920e884d93e86cfd126faba459cbde31b51eedbd56dbb7a034ec0d354866"
 
       define_method(:install) do
         bin.install "forge-sdd"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.1.2/homebrew-forge-sdd_darwin_arm64.tar.gz"
-      sha256 "ea7f759f7077694dfa66bfdf3430eba38c7af2539221540d47ccc3dfef00546d"
+      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.2.2/homebrew-forge-sdd_darwin_arm64.tar.gz"
+      sha256 "a1e300d7430ee79ad50aec46b1cc8693972ccecb6c280afff6aa4621987a33c0"
 
       define_method(:install) do
         bin.install "forge-sdd"
@@ -29,15 +29,15 @@ class ForgeSdd < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.1.2/homebrew-forge-sdd_linux_amd64.tar.gz"
-      sha256 "eb99b078eb1c4ac06255d72dad6888f2c0292ab8ffbc2fd0475c3ef5e8f2ed48"
+      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.2.2/homebrew-forge-sdd_linux_amd64.tar.gz"
+      sha256 "0c3c94cabc8bdc4c99b6ba790d210b6e361ef4de4a81d498f5dc27fb78f6db25"
       define_method(:install) do
         bin.install "forge-sdd"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.1.2/homebrew-forge-sdd_linux_arm64.tar.gz"
-      sha256 "12a0a9e35e02876251dc23193ae5a4cd34de49738d32c9270477e059089bed6a"
+      url "https://github.com/nathanramorim/homebrew-forge-sdd/releases/download/v1.2.2/homebrew-forge-sdd_linux_arm64.tar.gz"
+      sha256 "101963f3561702a735fcedf4321c85fd9898847da1389c816091611ae790406f"
       define_method(:install) do
         bin.install "forge-sdd"
       end
